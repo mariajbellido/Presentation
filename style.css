@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,77 @@ html {
     font-size: 62.5%
 }
 
-body {
-    font-size: 1.6rem;
+
+
+:root {
+    --page-1-color: steelblue;
+    --page-2-color: tan;
+    --page-3-color: teal;
+    --page-4-color: slateblue;
+    --animate-speed: 1s;
+    --heading-font: "Fredoka One", cursive;
+    --text-font: "Montserrat", sans-serif;
 }
+
+body {
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Page Colors */
+
+#page-1 { background: var(--page-1-color) }
+#page-2 { background: var(--page-2-color) }
+#page-3 { background: var(--page-3-color) }
+#page-4 { background: var(--page-4-color) }
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+}
+
+.page h1 {
+    font-size: 4rem;
+    font-family: var(--heading-font);
+    margin: 3rem;
+}
+
+.page p {
+    font-size: 2rem;
+    line-height: 2;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #f4f4f4;
+    color: #333;
+    text-decoration: none; 
+    border: none;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    transition: all 0.3s ease-in;
+
+}
+
+
+.btn:hover,
+.btn-dark {
+    background: #333;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: #f4f4f4;
+    color: #333;
+}
+
