@@ -17,7 +17,7 @@ html {
     --page-2-color: tan;
     --page-3-color: teal;
     --page-4-color: slateblue;
-    --animate-speed: 1s;
+    --animate-speed: 2s;
     --heading-font: "Fredoka One", cursive;
     --text-font: "Montserrat", sans-serif;
 }
@@ -82,5 +82,34 @@ body {
 .btn-dark:hover {
     background: #f4f4f4;
     color: #333;
+}
+
+/* Page animation */
+
+#page-1 h1 {
+    transform: translateY(-1200px);
+    animation: heading var(--animate-speed) forwards ease-in;
+
+}
+
+#page-1 p {
+    transform: translateX(-1800px);
+    animation: text var(--animate-speed) forwards ease-in 1.5s;
+}
+/* Keyframes */
+
+
+@keyframes heading {
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes text {
+
+    to {
+        transform: translateX(0);
+    }
 }
 
